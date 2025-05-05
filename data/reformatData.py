@@ -4,7 +4,16 @@ import json
 f1 = open("life_expectancy_cleansed.csv", "r")
 lines = f1.readlines()
 
-dictionary ={}
+dictionary ={
+
+    "countries":{
+        "mexico":[],
+        "canada":[],
+        "us":[]
+    },
+    "years":[]
+
+}
 
 # Create the dictionary here
 
