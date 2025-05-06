@@ -2,4 +2,16 @@
 
      <text x="250" y="250" text-anchor="middle">Insert your line graph here</text>
 
+     <!-- axis -->
+     <line x1="30" y1="30" x2="30" y2="470" stroke-linecap="round" style="stroke:#205c2e;stroke-width:10"/> 
+     <line x1="30" y1="470" x2="470" y2="470" stroke-linecap="round" style="stroke:#205c2e;stroke-width:10"/>
+
+     <!-- plotting line -->
+     <!-- canada -->
+     <g fill="none" stroke="#fa0f0f" stroke-width="6">
+          <polyline points="" stroke-linejoin="round"  />
+          <polyline points="40 120 80 80 120 120 160 80" stroke-linejoin="bevel" />
+     </g>
+
+
 </svg>
