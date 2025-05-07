@@ -8,10 +8,17 @@ app = Flask(__name__, static_url_path='', static_folder='static')
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    #load a current view of the data
+    f = open("data/life_expectancy.json", "r")
+    data = json.load(f)
+    f.close()
+    return render_template('index.html',data_keys=data.keys())
 
 @app.route('/year')
 def year():
-    return render_template('year.html')
+    f = open("data/life_expectancy.json", "r")
+    data = json.load(f)
+    f.close()
+    return render_template('year.html',data_keys=data.keys())
 
 app.run(debug=True)
